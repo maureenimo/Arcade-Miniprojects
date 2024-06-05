@@ -1,12 +1,3 @@
-
-from turtle import Turtle
-
-t = Turtle()
-for _ in range(4):
-    t.forward(90)
-    t.right(90)
-    
-
 import turtle as turtle_module
 import random
 
@@ -31,12 +22,6 @@ for dot_count in range(1, number_of_dots + 1):
         tim.setheading(180)
         tim.forward(500)
         tim.setheading(0)
-
-
-
-
-
-
 
 
 
