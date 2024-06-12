@@ -4,6 +4,7 @@ STARTING_POSITION = (0, -280)
 MOVE_DISTANCE = 10
 FINISH_LINE_Y = 280
 
+
 class Player(Turtle):
     def __init__(self):
         super().__init__()
@@ -11,14 +12,16 @@ class Player(Turtle):
         self.color("pink")
         self.penup()
         self.setheading(90)
-        self.goto(STARTING_POSITION)
-        self.move_speed = 0.1
+        self.refresh_game()
         
-    def go_up(self):
-        new_y = self.ycor() + MOVE_DISTANCE
-        self.goto(self.xcor(), new_y)
+    def up(self):
+        self.forward(MOVE_DISTANCE)
         
+    def finish_line(self):
+        if self.ycor() > FINISH_LINE_Y:
+            return True
+        else:
+            return False
         
     def refresh_game(self):
         self.goto(STARTING_POSITION)
-        self.move_speed = 0.09
