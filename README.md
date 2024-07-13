@@ -68,6 +68,12 @@ A simple utility to convert any string into the NATO phonetic alphabet, which ca
 ### Features
 - Converts input strings to NATO phonetic alphabet
 
+## Flash Cards game 
+Designed to help you recall French-English vocabulary.If you guess the correct English translation, you proceed to the next word. If your guess is incorrect, the game will show you the correct English translation.
+
+### Features
+- Interactive learning and a simple UI.
+- Get instant feedback on your answers to enhance learning.
 
 ## Requirements
 
