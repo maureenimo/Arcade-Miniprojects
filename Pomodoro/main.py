@@ -78,7 +78,7 @@ timer_text.grid(column=2, row=1)
 
 # Create a canvas
 canvas = Canvas(width=200, height=224, bg= YELLOW, highlightthickness= 0)
-tomato_image = PhotoImage(file="Pomodoro/tomato.png")
+tomato_image = PhotoImage(file="tomato.png")
 canvas.create_image(100, 112, image=tomato_image)
 text_timer = canvas.create_text(100, 130, text="00:00", fill="white", font=(FONT_NAME, 45, "bold"))
 canvas.grid(column=2, row=2)
